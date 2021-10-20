@@ -1,0 +1,77 @@
+11111開発は以前、本山さんとの案件でvagrantを試そうとしましたが
+環境構築ができなかったので
+dockerでやってみたいと思います。
+
+docker composeで環境のセットアップしております。
+ミドルウェアですが
+phpは7.4
+mysqlは5.7
+webサーバーはnginxにしています。
+
+ローカル環境でdockerで開発を行い
+ドキュメントルートのソースコードをgithubで共有
+それをテスト環境（heteml）にデプロイしてチェック
+といった流れです。
+
+
+
+
+dockerをインストールお願いします。
+dockerというのはコンテナ型の仮想環境構築ツールです。
+
+https://www.docker.com/
+
+右上のget startedから
+windowsのdockerをダウンロード、インストールお願いします。
+
+
+
+
+
+osはもしawsにする場合はamazon linuxになると思います。
+amazon linuxのディストリビューションは明らかにされてないですが
+centosベースと言われています。
+ただ、centosは開発がストップしたので今後ubuntu系になるのではないかと思っています。
+
+
+
+
+
+
+
+
+
+学生が使うタブレットの種類
+解像度等確認したい。
+
+
+docker ps -a
+
+docker exec -it test2-nginx-1 /bin/sh
+
+
+
+
+
+git clone https://github.com/ktpolyworks/docker_php_base.git
+
+
+docker-compose up -d
+
+localhost:8080
+localhost:8888
+
+
+http://localhost:8080
+http://localhost:8888
+
+
+
+docker-compose exec php bash
+
+
+Debian
+
+
+docker-compose exec db bash
+mysql -u root -h localhost -p123456
