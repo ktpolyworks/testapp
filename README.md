@@ -1,2 +1,6 @@
 # testapp
 testapp
+
+これはテストです。
+nihongonotesutodesu
+
